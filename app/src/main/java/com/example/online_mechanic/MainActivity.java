@@ -5,12 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class MainActivity extends AppCompatActivity {
 
     Button btnSignIn,btnRegister;
+
+    FirebaseAuth auth;
 
     @Override
     protected void attachBaseContext(Context newBase){
@@ -23,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         setContentView(R.layout.activity_main);
+
 
         btnRegister = (Button)findViewById(R.id.btnRegister);
         btnSignIn = (Button)findViewById(R.id.btnSignIn);
