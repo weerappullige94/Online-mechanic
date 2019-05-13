@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         dialog.setMessage("Please use email to sign in");
 
         LayoutInflater inflater = LayoutInflater.from(this);
-        View login_layout = inflater.inflate(R.layout.layout_register,null);
+        View login_layout = inflater.inflate(R.layout.layout_login,null);
 
         final MaterialEditText edtEmail = login_layout.findViewById(R.id.edtEmail);
         final MaterialEditText edtPassword = login_layout.findViewById(R.id.edtPassword);
